@@ -1,7 +1,7 @@
 <h1>Channels</h1>
 
 <p>
-  <%= link_to 'Create new channel', :action => :new %>
+  <%= link_to 'Create new channel', { :action => :new }, :class => 'new' %>
 </p>
 
 <% @channels.each do |channel| %>
@@ -10,7 +10,7 @@
     <h3><%= channel.name %></h3>
     
     <p>
-      <%= link_to "Create new source for #{channel.name}", :controller => :sources, :action => :new, :channel_id => channel.id %>
+      <%= link_to "Create new source for #{channel.name}", { :controller => :sources, :action => :new, :channel_id => channel.id }, :class => 'new' %>
     </p>
     
     <% channel.sources.each do |source| %>

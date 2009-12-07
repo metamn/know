@@ -1,0 +1,23 @@
+body {
+  background:#222222;
+}
+
+#container {
+  background:#fff;
+  width:800px;
+  margin:20px auto;
+  padding:10px;
+}
+
+a {
+  color:blue;
+}
+
+a.new {
+  font-size:12px;
+  color:#ff0000;
+}
+
+.channel {
+  margin-left:20px;
+}
