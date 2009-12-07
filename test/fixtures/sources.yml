@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: 1
+  channel_id: 1
+  source_type_id: 1
+  url: MyString
+
+two:
+  name: 1
+  channel_id: 1
+  source_type_id: 1
+  url: MyString

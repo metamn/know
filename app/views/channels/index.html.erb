@@ -1,0 +1,17 @@
+<h1>Channels</h1>
+
+<% @channels.each do |channel| %>
+  
+  <div class="channel">
+    <h3><%= channel.name %></h3>
+    
+    <% channel.sources.each do |source| %>
+      <div class="feed">
+        <%= link_to source.name, source.url, { 'data-feed' => true } %>
+      </div>
+      
+    <% end %>
+    
+  </div>
+
+<% end %>
