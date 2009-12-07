@@ -28,7 +28,13 @@ jQuery(function() {
   
   $('a[data-feed=true]').live('click', function(e) {
     e.preventDefault();
-    return getFeed(this);
+    
+
+    if ($(this).parent().children("ul").length > 0) {
+      return $(this).parent().children("ul").remove();
+    } else {
+     return getFeed(this); 
+    }
   });
   
 });
