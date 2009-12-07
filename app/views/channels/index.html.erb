@@ -1,9 +1,17 @@
 <h1>Channels</h1>
 
+<p>
+  <%= link_to 'Create new channel', :action => :new %>
+</p>
+
 <% @channels.each do |channel| %>
   
   <div class="channel">
     <h3><%= channel.name %></h3>
+    
+    <p>
+      <%= link_to "Create new source for #{channel.name}", :controller => :sources, :action => :new, :channel_id => channel.id %>
+    </p>
     
     <% channel.sources.each do |source| %>
       <div class="feed">
